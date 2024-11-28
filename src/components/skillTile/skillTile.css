@@ -1,0 +1,12 @@
+.Tile{
+    background-color: var(--DarkBackGroundColor);
+    padding: 6px 8px;
+    margin: 4px;
+    border-radius: 8px;
+}
+@media (max-width: 650px){
+    .Tile{
+        font-size: 0.6em;
+        margin: 4px 6px;
+    }
+}

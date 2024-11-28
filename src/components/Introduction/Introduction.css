@@ -1,0 +1,204 @@
+.introduction{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--LetterColor);
+    height: 97vh;
+
+    
+}
+.introduction .firstStep{
+    text-align: start;
+    width: 50%;
+    margin: 5%;
+}
+.introduction .firstStep h1{
+    margin: 0;
+    padding: 0;
+    font-size: 4em;
+    font-weight: 400;
+    letter-spacing: 6px;
+
+}
+.border-bar{
+    overflow: hidden;
+    position: absolute;
+    content: "";
+    width: 35%;
+    height: 5px; 
+}
+
+.bordergradient {
+    position: relative;
+    width: 1%;
+    height: 100%;
+    background: linear-gradient(to bottom, var(--BackGroundColor), var(--SecondaryColor) 80%, var(--BackGroundColor));
+    opacity: 0.5;
+    animation-name: h1-borderanimation;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+    animation-duration: 3s;
+  }
+  .bordergradient2 {
+    position: relative;
+    width: 1%;
+    height: 100%;
+    background: linear-gradient(to bottom, var(--BackGroundColor), var(--SecondaryColor) 80%, var(--BackGroundColor));
+    opacity: 0.5;
+    animation-name: h1-borderanimation2;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+    animation-duration: 3s;
+  }
+
+.introduction .firstStep h2{
+    margin: 0;
+    padding: 0;
+    font-size: 2.5em;
+    font-weight: lighter;
+}
+.introduction .firstStep h3{
+    margin: 0;
+    padding: 0;
+    font-weight: lighter;
+    font-size: 2.2em;
+    letter-spacing: 5px;
+}
+.introduction .firstStep .buttonDiv{
+    display: flex;
+    margin: 16px;
+}
+
+
+.introduction .secondStep{
+    width: 50%;
+    text-align: center;
+}
+.introduction .secondStep h2{
+    font-weight: lighter;
+    font-size: 2.5em;
+    margin-bottom: 16px;
+}
+.introduction .secondStep p {
+    margin: auto;
+    color: #b5b5b5;
+    width: 70%;
+    margin-bottom: 32px;
+    text-align: left;
+}
+.introduction .secondStep section {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    width: 70%;
+}
+.introduction .secondStep #msg{
+    text-align: start;
+    color: #bbb;
+}
+.button-container{
+    display: flex;
+    align-items: center;
+}
+
+
+
+@media (max-width: 1120px){
+    .introduction{
+        flex-direction: column;
+        
+    }
+    .introduction .firstStep{
+        text-align: center;
+        width: 100%;
+        margin: 0;
+    }
+    .introduction .secondStep{
+        width: 90%;
+        text-align: center;
+    }
+    .introduction .firstStep .buttonDiv{
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+    }
+    .introduction .secondStep section {
+        justify-content: center;
+        align-items: center;
+    }
+    .introduction .secondStep #msg{
+        text-align: center;
+    }
+    .introduction .secondStep p {
+        width: 70%;
+        font-size: 0.7em;
+    }
+
+    .button-container{
+        margin-top: 32px;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+    }
+    .border-bar{
+        overflow: hidden;
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 5px; 
+    }
+    
+   
+}
+
+
+
+@media (max-width: 650px){
+    .introduction{
+        height: 100vh;
+       
+    }
+    .introduction .firstStep h1{
+        font-size: 1.9em;
+    }
+    .introduction .firstStep h2{
+        padding-top: 100px;
+        font-size: 1.2em;
+    }
+    .introduction .firstStep h3{
+        font-size: 1.2em;
+        margin-bottom: 32px ;
+    }
+    .introduction .secondStep h2{
+        font-size: 1.2em;
+        margin-bottom: 16px;
+     }
+     .introduction .secondStep p {
+        width: 90%;
+        font-size: 0.7em;
+    }
+
+   
+}
+
+
+@keyframes h1-borderanimation {
+    to{left: 100%;
+
+    }from{
+        left: -1%;
+    }
+    
+}
+@keyframes h1-borderanimation2 {
+    to{left: -1%;
+
+    }from{
+        left: 100%;
+    }
+    
+}
+

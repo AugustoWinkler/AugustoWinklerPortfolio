@@ -1,16 +1,8 @@
-# AugustoWinklerPortfolio
-## Color Palletes
-  --BackGroundColor: #333333;
-  --LetterColor: #ffffff;
-  --SecondaryColor: #06C3FF;
-  --DarkBackGroundColor: #222222;
-  
-### Figma Design
-Link: [Augusto Winkler Figma](https://www.figma.com/file/GEUtIIqOFkZlP5SNfHUw5w/Augusto-Winkler-Portf%C3%B3lio?type=design&node-id=0%3A1&mode=design&t=seHsqWntF96EZMMk-1)
-## Technologies
-- React
-- JavaScript
-- HTML5
-- CSS3
-- Swiper Lib
-  
+# React + Vite
+
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+
+Currently, two official plugins are available:
+
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh

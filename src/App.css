@@ -1,0 +1,14 @@
+#root {
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  
+
+  --BackGroundColor: #242424;
+  --LetterColor: #ffffff;
+  --SecondaryColor: #06C3FF;
+  --DarkBackGroundColor: #191919;
+}
+
