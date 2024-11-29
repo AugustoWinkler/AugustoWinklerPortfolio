@@ -1,69 +1,114 @@
-.form{display: flex;
-    justify-content: center;
-    align-items: center;
-flex-direction: column;}
-.form .email{
+.form{
     display: flex;
-    justify-content: center;
     align-items: center;
+    flex-direction: column;}
+.form .email{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 12px;
 }
 .form h2{
+    color: var(--LetterColor);
+    font-weight: lighter;
     font-size: 2em;
     text-align: center;
     padding-bottom: 32px;
 }
 .form input{
     background-color: var(--DarkBackGroundColor);
-    width: 300px;
+    border: 1px solid var(--SecondaryColor);
+    width: 100%;
     height: 40px;
-    border: none;
-    margin: 8px;
     color: var(--LetterColor);
-    padding: 8px;
+
 }
 .form textarea{
-    padding: 8px;
     background-color: var(--DarkBackGroundColor);
-    margin: 8px;
     color: var(--LetterColor);
-    border: none;
+    border: 1px solid var(--SecondaryColor);
     display: block;
-    margin: auto;
     text-align: start;
-    width: 632px;
+    width: 99.5%;
     height: 300px;
     resize: none;    
 }
 .form .CustomButon{
-    margin: auto;
-    display: flex;
-    justify-content: center;
     align-items: center;
-    margin: 16px;
 }
-@media (max-width: 700px){
-    .form textarea{
-        width: 332px;
-        height: 150px;
+
+.form-container{
+    width: 50%;
+    height: auto;
+    border: 1px solid var(--SecondaryColor);
+    border-radius: 0px 0px 100% 100%;
+    background-color: #00c3ff4d;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 0.7%;
+    z-index: 1;
+}
+
+.BGEffect{
+    z-index: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    margin-top: 64px;
+
+}
+.BGSpan{
+    width: 20%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+  
+.BGSpan2{
+    width: 20%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.BGLine{
+    height: 1.5px;
+    width: 60%;
+    background-color: var(--SecondaryColor);
+}
+.BGLine2{
+    height: 2px;
+    width: 100%;
+    background-color: var(--SecondaryColor);
+}
+
+@media (max-width: 1024px){
+    .form-container{
+        width: 82.5%;
+        border-radius: 0px 0px 50% 50%;
+        padding-bottom: 2%;
     }
-    .form input{
-        width: 150px;
-        height: 20px;
+    .BGSpan , .BGSpan2{
+        display: none;
     }
+
 
 }
 @media (max-widht: 650px){
-    .form h2{
-        font-size: 1.2em;
+    .form-container{
+        width: 90%;
+        border-radius: 0px 0px 50% 50%;
     }
+
 }
 @media (max-width: 430px){
-    .form textarea{
-        width: 232px;
-        height: 150px;
-    }
-    .form input{
-        width: 100px;
-        height: 20px;
-    }
+
 }

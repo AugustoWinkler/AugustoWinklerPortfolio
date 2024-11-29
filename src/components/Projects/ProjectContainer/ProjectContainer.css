@@ -1,0 +1,39 @@
+.ProjectContainer {
+    width: 300px;
+    height: 500px;
+    background-color: #191919;
+    overflow: hidden;
+    border: 1px solid var(--SecondaryColor);
+    & img{
+        width: 100%;
+        overflow: hidden;
+
+        
+    }
+}
+
+
+.Projectmain #text{
+    color: white;
+    font-weight: lighter;
+    font-size: 1.2em;
+    margin-bottom: 12px;
+}
+.Projectmain .Code{
+    display: flex;
+    align-items: center;
+    width: 100%;
+
+}
+.Projectmain p {
+    text-align: center;
+    color: #8f8f8f;
+}
+.Projectmain a {
+    font-size: 1em;
+    font-weight: bolder;
+    text-decoration: none;
+    color: white;
+    padding: 5px 20px;
+    border: 1px solid var(--SecondaryColor) ;
+}

@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import emailjs from '@emailjs/browser';
 import AltColor from '../AltColor'
 import CustomButon from '../CustomButton'
 import './FormSubmit.css';
@@ -28,35 +27,50 @@ const FormSubmit = () => {
     return (
         <form className='form' onSubmit={handleSubmit} method='POST'>
             <h2>Contact  <AltColor color={'var(--SecondaryColor)'}> Me</AltColor></h2>
-            <div className='email'>
-                <input
-                    className='input'
-                    type='text'
-                    placeholder='Full Name*'
-                    onChange={(e) => setName(e.target.value)}
-                    value={name}
+            <div className='form-container'>
+                <div className='email'>
+                    <input
+                        className='input'
+                        type='text'
+                        placeholder='Full Name*'
+                        onChange={(e) => setName(e.target.value)}
+                        value={name}
+                        required
+                    />
+                    <input
+                        className='input'
+                        type='text'
+                        placeholder='Email*'
+                        onChange={(e) => setEmail(e.target.value)}
+                        value={email}
+                        required
+                    />
+                </div>
+                <textarea
+                    className='textarea'
+                    placeholder='Write your message'
+                    onChange={(e) => setMessage(e.target.value)}
+                    value={message}
                     required
-                />
-                <input
-                    className='input'
-                    type='text'
-                    placeholder='Email*'
-                    onChange={(e) => setEmail(e.target.value)}
-                    value={email}
-                    required
-                />
+                ></textarea>
+                
+                <div className='CustomButon'>
+                    <CustomButon  name='Send Message.' type='submit' />
+                </div>
             </div>
-            <textarea
-                className='textarea'
-                placeholder='Write your message'
-                onChange={(e) => setMessage(e.target.value)}
-                value={message}
-                required
-            ></textarea>
+            <div className='BGEffect'>
+                <span className='BGSpan'>
+                    <span className='BGLine'></span>
+                    <span className='BGLine2'></span>
+                    <span className='BGLine'></span>
+                </span>
+                <span className='BGSpan2'>
+                    <span className='BGLine'></span>
+                    <span className='BGLine2'></span>
+                    <span className='BGLine'></span>
+                </span>
+            </div>
             
-            <div className='CustomButon'>
-                <CustomButon  name='Send Message.' type='submit' />
-            </div>
         </form>
     );
 };
