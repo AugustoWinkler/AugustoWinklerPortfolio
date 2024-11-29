@@ -13,8 +13,8 @@ const ProjectContainer = (props) => {
             
             </div>
             <div className="Code">
-                <a href="">Deploy</a>
-                <a href="">&lt;/&gt;</a>
+                <a href={props.deploy} target="_blank">Deploy</a>
+                <a href={props.code} target="_blank">&lt;/&gt;</a>
             </div>
         </div>
 
