@@ -1,4 +1,5 @@
 .form{
+    padding-top: 64px;
     display: flex;
     align-items: center;
     flex-direction: column;}
@@ -51,6 +52,15 @@
     padding-bottom: 0.7%;
     z-index: 1;
 }
+
+.buttonDivForm{
+    margin-top: 32px;
+    gap: 32px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 64px;
+}
+
 
 .BGEffect{
     z-index: 0;

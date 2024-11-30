@@ -11,12 +11,11 @@
 }
 
 .Projects-main h1 {
-    text-align: center;
     color: var(--LetterColor);
-    margin-bottom: 24px;
-
-    font-size: 2.5em;
     font-weight: lighter;
+    font-size: 2em;
+    text-align: center;
+    padding-bottom: 32px;
 }
 
 @media (max-width: 1120px){

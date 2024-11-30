@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import AltColor from '../AltColor'
 import CustomButon from '../CustomButton'
 import './FormSubmit.css';
+import Icon from '../Icon';
+import emailjs from 'emailjs-com';
 
 const FormSubmit = () => {
     const [name, setName] = useState('');
@@ -15,7 +17,13 @@ const FormSubmit = () => {
             message: message,
             email: email
         }
-        emailjs.send("service_b0hts96","template_o1828b4", templateParams, "-sUP7ylExYU2nhVCX")
+        emailjs.send(
+            import.meta.env.VITE_EMAILJS_SERVICE_ID,
+            import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+            templateParams,
+            import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+        )
+        
         .then((response)=>{
             console.log("Email Enviado", response.status, response.text)
             setName('')
@@ -69,6 +77,10 @@ const FormSubmit = () => {
                     <span className='BGLine2'></span>
                     <span className='BGLine'></span>
                 </span>
+            </div>
+            <div className='buttonDivForm'>
+                    <Icon src='/GitHub.png' alt='GitHub' link='https://github.com/AugustoWinkler' />
+                    <Icon src='/Linkedin.png' alt='Linkedin' link='https://www.linkedin.com/in/augusto-winkler-a268b81bb/' />   
             </div>
             
         </form>
