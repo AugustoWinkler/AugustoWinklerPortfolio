@@ -18,4 +18,13 @@ body{
   background-color: var(--BackGroundColor);
 }
 
+.reveal {
+  opacity: 0;
+  transform: translate3d(0, 50px, 0);
+  transition: opacity 0.8s, transform 0.8s;
+}
 
+.reveal_visible {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+}

@@ -22,7 +22,7 @@ function App() {
 '::'  
         Hello Dev!
     `);
-  }, []); // O código será executado apenas uma vez quando o componente for montado
+  }, []);
 
   return (
     <>

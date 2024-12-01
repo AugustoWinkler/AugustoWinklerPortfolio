@@ -4,6 +4,9 @@
   font-weight: 400;
   background-color: #242424;  
 
+  margin: auto;
+  max-width: 1980px;
+
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;

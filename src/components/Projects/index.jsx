@@ -3,7 +3,10 @@ import './Projects.css'
 import ProjectContainer from "./ProjectContainer";
 import AltColor from "../AltColor";
 
+
 const Projects = () =>{
+
+
     return(
 
         <div className="Projects-main">
@@ -16,6 +19,7 @@ const Projects = () =>{
                 <ProjectContainer src ='AC.png' text ='AquaCeleste' desc = 'Still working on it' deploy = 'https://aqua-celeste.vercel.app' code = 'https://github.com/AugustoWinkler/AquaCeleste'/>
             </div>
         </div>
+
      
     )
 }  

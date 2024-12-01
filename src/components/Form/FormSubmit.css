@@ -1,9 +1,11 @@
-.form{
+.form {
     padding-top: 64px;
     display: flex;
     align-items: center;
-    flex-direction: column;}
-.form .email{
+    flex-direction: column;
+}
+
+.form .email {
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -11,22 +13,24 @@
     gap: 12px;
     margin-bottom: 12px;
 }
-.form h2{
+
+.form h2 {
     color: var(--LetterColor);
     font-weight: lighter;
     font-size: 2em;
     text-align: center;
     padding-bottom: 32px;
 }
-.form input{
+
+.form input {
     background-color: var(--DarkBackGroundColor);
     border: 1px solid var(--SecondaryColor);
     width: 100%;
     height: 40px;
     color: var(--LetterColor);
-
 }
-.form textarea{
+
+.form textarea {
     background-color: var(--DarkBackGroundColor);
     color: var(--LetterColor);
     border: 1px solid var(--SecondaryColor);
@@ -34,17 +38,18 @@
     text-align: start;
     width: 99.5%;
     height: 300px;
-    resize: none;    
+    resize: none;
 }
-.form .CustomButon{
+
+.form .CustomButon {
     align-items: center;
 }
 
-.form-container{
+.form-container {
     width: 50%;
     height: auto;
     border: 1px solid var(--SecondaryColor);
-    border-radius: 0px 0px 100% 100%;
+    border-radius: 0 0 100% 100%;
     background-color: #00c3ff4d;
     display: flex;
     flex-direction: column;
@@ -53,7 +58,7 @@
     z-index: 1;
 }
 
-.buttonDivForm{
+.buttonDivForm {
     margin-top: 32px;
     gap: 32px;
     display: flex;
@@ -61,8 +66,7 @@
     margin-bottom: 64px;
 }
 
-
-.BGEffect{
+.BGEffect {
     z-index: 0;
     width: 100%;
     display: flex;
@@ -70,55 +74,47 @@
     align-items: center;
     position: absolute;
     margin-top: 64px;
-
 }
-.BGSpan{
+
+.BGSpan, .BGSpan2 {
     width: 20%;
     height: 500px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-
 }
-  
-.BGSpan2{
-    width: 20%;
-    height: 500px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+
+.BGSpan2 {
     align-items: flex-end;
 }
-.BGLine{
+
+.BGLine {
     height: 1.5px;
     width: 60%;
     background-color: var(--SecondaryColor);
 }
-.BGLine2{
+
+.BGLine2 {
     height: 2px;
     width: 100%;
     background-color: var(--SecondaryColor);
 }
 
-@media (max-width: 1024px){
-    .form-container{
+/* Media Queries */
+@media (max-width: 1024px) {
+    .form-container {
         width: 82.5%;
-        border-radius: 0px 0px 50% 50%;
+        border-radius: 0 0 50% 50%;
         padding-bottom: 2%;
     }
-    .BGSpan , .BGSpan2{
+    .BGSpan, .BGSpan2 {
         display: none;
     }
-
-
 }
-@media (max-widht: 650px){
-    .form-container{
+
+@media (max-width: 650px) {
+    .form-container {
         width: 90%;
-        border-radius: 0px 0px 50% 50%;
+        border-radius: 0 0 50% 50%;
     }
-
-}
-@media (max-width: 430px){
-
 }
