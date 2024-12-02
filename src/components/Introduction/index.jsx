@@ -31,7 +31,9 @@ const Introduction = () => {
                         <Icon src='/GitHub.png' alt='GitHub' link='https://github.com/AugustoWinkler' />
                         <Icon src='/Linkedin.png' alt='Linkedin' link='https://www.linkedin.com/in/augusto-winkler-a268b81bb/' />
                     </div>
-                    <CustomButon name='Download CV' />
+                    <a href="Augusto Winkler.pdf" download>
+                        <CustomButon name='Download CV' />
+                    </a>
                 </div>
             </div>
             <div className='secondStep'>
